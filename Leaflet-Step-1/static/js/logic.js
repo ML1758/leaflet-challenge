@@ -12,15 +12,13 @@ d3.json(queryUrl).then(function(data) {
 
 
 function getColor(depth) {
-  return  depth > 90  ? "red":
-          depth > 70  ? '#FC4E2A' :
-          depth > 50  ? '#FD8D3C' :
-          depth > 30  ? '#FEB24C' :
-          depth > 10  ? "green" :
-                        "lightgreen";
+  return  depth > 90  ? "#FF6600":
+          depth > 70  ? "#FF9933" :
+          depth > 50  ? "#FFCC66" :
+          depth > 30  ? "#E7E200" :
+          depth > 10  ? "#CCFF33" :
+                        "#00EA00";
 }
-
-
 
 function createFeatures(earthquakeData) {
 
